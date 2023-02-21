@@ -1,0 +1,213 @@
+//custom css
+.possoftware{
+    background-color: none;
+    margin-top: 80px;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+
+    .container{
+    margin-top: 120px;
+    
+        .post{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 50px;
+
+            .inquire{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+                margin-left: 70px;
+                margin-top: 50px;
+                button{
+                    background-color: rgb(3, 134, 173);
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    padding: 15px 30px;
+                    cursor: pointer;
+                              
+                }
+                :hover{
+                    background-color: rgb(5, 160, 207);
+                }
+            }
+            
+            h6{
+                
+                margin: 20px 50px;
+                padding: 10px 20px;
+                font-size: 50px;
+                color: #3d4244;
+                // background-color: red;
+                
+            }
+            
+            p{
+            width: 650px;
+            line-height: 25px;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 50px;
+            padding: 10px 20px;
+            }
+        
+            img{
+               width: 450px;
+               margin: 50px 50px;
+               border-radius: 30px;
+            //    box-shadow: -30px -30px 0px #f0f0f0;
+            //    position: relative;
+            //    padding: 10px 10px;
+            //    background-color: red;
+           
+            }
+                 
+        }
+        .post-2{
+            width: 100%;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: row;
+            // width: 800px;
+            gap: 100px;
+            padding-bottom: 100px;
+            
+            
+            .content-2{
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                hr{
+                    margin-left: 70px;
+                    width: 600px;
+                    margin-bottom: 20px;
+                }
+
+                h3{    
+                    margin: 20px 50px;
+                    padding: 10px 20px;
+                    font-size: 30px;
+                    color: #5a5a5a;
+                    // background-color: red;
+                    
+                }
+
+                h2{    
+                    margin: 0px 50px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    color: #5a5a5a;
+                    // background-color: red;
+                    
+                }
+
+   
+                    li{
+                        margin-left: 70px;
+                        padding-bottom: 20px;
+                        line-height: 30px; 
+                        font-size: 17px;
+                        color: #5a5a5a;
+                    }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .possoftware{
+        background-color: none;
+        margin-top: 80px;
+        padding-bottom: 0px;
+        background-color: #ffffff;
+        transition: all .5s;
+        .container{
+            margin-top: 0px;
+            overflow: hidden;
+            .post{
+                
+                display: flex;
+                flex-direction: column;
+
+                h6{
+                    padding: 10px 50px;
+                }
+                p{
+                    width: 400px;
+                    padding: 10px 50px;
+                }
+                span{     
+                    width: 500px;
+                }
+                img{
+                    width: 400px;
+                }
+                .inquire{
+                    padding: 10px 30px;
+                }
+                img{
+                    width: 350px;
+                }
+            }
+
+
+            .post-2{
+                display: flex;
+                flex-direction: column;
+                // width: 100%;
+
+
+               .content-2{
+                display: flex;
+                flex-direction: column;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                width: 300px;
+
+                li{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    
+                    line-height: 30px;
+                }
+
+                h3{
+                    margin-left: 0px;
+                    // border-style: solid;
+                    width: 400px;
+                }
+       
+
+                
+
+                .specs{
+                    
+                    
+                    
+                    h2{
+                        
+                        margin-left: 0px;
+                    }
+
+                    li{
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        line-height: 30px;
+                    }
+
+               
+  
+                }
+
+                
+                
+               }
+            }
+        }
+    }
+}

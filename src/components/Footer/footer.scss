@@ -1,0 +1,106 @@
+footer{
+
+    .container{
+    // position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    
+    // box-shadow: 10px 0px 3px #b1b1b1;
+    
+        img{
+            width: 180px;
+        }
+    }
+    .container-top{
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        background-color:  rgb(3, 104, 134);
+        margin-top: 0px;
+        padding: 10px 30px;
+        // height: 350px;
+        gap: 20px;
+        .flex-1{
+            flex: 2;
+            background-color: rgb(3, 104, 134);
+            // max-width: 400px;
+            height: 300px;
+            h6{         
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .address{
+                padding: 10px 10px;
+                // width: 250px;
+                line-height: 18px;
+                color: white;
+                // background-color:rgb(8, 42, 51);
+                height: 300px;
+                font-size: 12px;
+                
+            }
+            a{
+                color: rgb(101, 219, 255);
+            }
+        }
+       
+    }
+}
+
+@media (max-width: 800px) {
+    
+    footer{
+        .container-top{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            // justify-content: space-between;
+            
+            .flex-1{
+                flex: 2;
+                background-color: rgb(3, 104, 134);
+                // max-width: 400px;
+                height: 300px;
+                h6{         
+                    color: white;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .address{
+                    padding: 10px 0px;
+                    // width: 250px;
+                    line-height: 18px;
+                    color: white;
+                    // background-color:rgb(8, 42, 51);
+                    height: 300px;
+                    font-size: 12px;
+                    
+                }
+            }
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        // width: 100%;
+
+            span{
+                padding: 5px 5px;
+                text-align: center;
+                }
+        }
+    }
+    
+}
