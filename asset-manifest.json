@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rle-web-app/static/css/main.8609b474.css",
+    "main.js": "/rle-web-app/static/js/main.0825f446.js",
+    "static/media/pos.jpg": "/rle-web-app/static/media/pos.66282e1589ad93514dd8.jpg",
+    "static/media/rleweblogo.png": "/rle-web-app/static/media/rleweblogo.260eb33c570274b78df3.png",
+    "static/media/bg1.jpg": "/rle-web-app/static/media/bg1.a62dbe853b0746d1bfc7.jpg",
+    "index.html": "/rle-web-app/index.html",
+    "main.8609b474.css.map": "/rle-web-app/static/css/main.8609b474.css.map",
+    "main.0825f446.js.map": "/rle-web-app/static/js/main.0825f446.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8609b474.css",
+    "static/js/main.0825f446.js"
+  ]
+}
