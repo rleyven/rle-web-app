@@ -26,7 +26,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    // path: "/",
     element: <Layout />,
     children: [
       {
@@ -34,15 +34,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/customsoftware",
+        path: "customsoftware",
         element: <CustomSoftware />,
       },
       {
-        path: "/possoftware",
+        path: "possoftware",
         element: <PosSoftware />,
       },
       {
-        path: "/webdevelopment",
+        path: "webdevelopment",
         element: <WebDevelopment />,
       },
       // {
