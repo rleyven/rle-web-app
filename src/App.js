@@ -26,23 +26,23 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    // path: "/",
+    path: "/rle-web-app",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/rle-web-app",
         element: <Home />,
       },
       {
-        path: "customsoftware",
+        path: "/rle-web-app/customsoftware",
         element: <CustomSoftware />,
       },
       {
-        path: "possoftware",
+        path: "/rle-web-app/possoftware",
         element: <PosSoftware />,
       },
       {
-        path: "webdevelopment",
+        path: "/rle-web-app/webdevelopment",
         element: <WebDevelopment />,
       },
       // {

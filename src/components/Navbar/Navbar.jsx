@@ -13,23 +13,23 @@ const Navbar = () => {
       </label>
       {/* <label className="logo">RLE Software</label> */}
 
-      <Link to="/">
+      <Link to="/rle-web-app">
         <img src={Logo} alt="" />
         {/* <img src={process.env.PUBLIC_URL + "/img/rleweblogo.png"} alt="" /> */}
         {/* <img src={require("../img/rleweblogo.png")} alt="" /> */}
       </Link>
 
       <ul>
-        <Link to="/" className="home" id="lnk">
+        <Link to="/rle-web-app" className="home" id="lnk">
           <li className="link">Main</li>
         </Link>
-        <Link to="/possoftware" className="possoftware">
+        <Link to="/rle-web-app/possoftware" className="possoftware">
           <li className="link">POS Software</li>
         </Link>
-        <Link to="/customsoftware" className="customsoftware">
+        <Link to="/rle-web-app/customsoftware" className="customsoftware">
           <li className="link">Custom Software</li>
         </Link>
-        <Link to="/webdevelopment" className="webdevelopment">
+        <Link to="/rle-web-app/webdevelopment" className="webdevelopment">
           <li className="link">Web Development</li>
         </Link>
       </ul>
