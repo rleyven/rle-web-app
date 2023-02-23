@@ -6,20 +6,24 @@ import Home from "./components/Home/Home";
 import PosSoftware from "./components/PosSoftware/PosSoftware";
 import CustomSoftware from "./components/CustomSoftware/CustomSoftware";
 import WebDevelopment from "./components/WebDevelopment/WebDevelopment";
+import Signin from "./components/Signin/Signin";
 import Footer from "./components/Footer/Footer";
 
 // https://github.com/michalsnik/aos
 // flip and animation
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { AuthContextProvider } from "./components/Context/AuthContext";
 AOS.init();
 
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <AuthContextProvider>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </AuthContextProvider>
     </>
   );
 };
@@ -45,6 +49,10 @@ const router = createBrowserRouter([
         path: "/rle-web-app/webdevelopment",
         element: <WebDevelopment />,
       },
+      {
+        path: "/rle-web-app/signin",
+        element: <Signin />,
+      },
       // {
       //   path: "/post/:id",
       //   element: <Single />,
@@ -59,8 +67,8 @@ const router = createBrowserRouter([
   //Non child forms
 
   // {
-  //   path: "/register",
-  //   element: <Register />,
+  //   path: "/rle-web-app/signin",
+  //   element: <Signin />,
   // },
   // {
   //   path: "/login",

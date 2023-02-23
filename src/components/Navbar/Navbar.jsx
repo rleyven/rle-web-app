@@ -1,13 +1,38 @@
 import React from "react";
-// import { useState } from "react";
+// import { useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Logo from "../img/rleweblogo.png";
-
+import { UserAuth } from "../Context/AuthContext";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  // const [click, setClick] = useState(false);
-  // const handleClick = () => setClick(!click);
+  const { googleSignIn, user } = UserAuth();
+  // const navigate = useNavigate();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const { logOut } = UserAuth();
+
+  const handleSignOut = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // useEffect(() => {
+  //   if (user != null) {
+  //     navigate("/rle-web-app");
+  //   }
+  // }, [user]);
 
   return (
     <nav>
@@ -32,6 +57,19 @@ const Navbar = () => {
         <Link to="/rle-web-app/webdevelopment" className="webdevelopment">
           <li className="link">Web Development</li>
         </Link>
+        {user?.displayName ? (
+          <Link className="signin">
+            <li className="link" onClick={handleSignOut}>
+              LOGOUT [{user.displayName}]
+            </li>
+          </Link>
+        ) : (
+          <Link className="signin">
+            <li className="link" onClick={handleGoogleSignIn}>
+              SIGN IN
+            </li>
+          </Link>
+        )}
       </ul>
     </nav>
   );
