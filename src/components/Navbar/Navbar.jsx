@@ -21,7 +21,7 @@ const Navbar = () => {
       </Link>
       <ul className="nav-menu">
         <Link to="/rle-web-app" className="home">
-          <li className="link">Main</li>
+          <li className="link">Home</li>
         </Link>
         <Link to="/rle-web-app/possoftware" className="possoftware">
           <li className="link">POS Software</li>
