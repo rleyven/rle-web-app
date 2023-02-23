@@ -12,6 +12,7 @@ function PosSoftware() {
   };
 
   document.addEventListener("contextmenu", disableRightClick);
+
   return (
     <div>
       <div className="possoftware">
