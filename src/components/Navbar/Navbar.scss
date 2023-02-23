@@ -94,6 +94,7 @@ ul{
     display: none;
 }
 
+
 //952
 @media (max-width: 600px) {
     label.logo{
@@ -130,23 +131,32 @@ ul{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        
     }
+
+   
+
+
     nav ul li{
         
-        display: block;
+        
+        display: block; 
         color: white;
         font-size: 20px;
         height: 50px;
 
         
+        
     }
 
     nav{
-
+        
     .home,
     .possoftware,
     .customsoftware,
     .webdevelopment{
+
+        
 
         transition: all .5s;
             :hover{
@@ -155,12 +165,15 @@ ul{
                 color: #f0c70e!important;
                 transition: .5s;
                 }
+            
         }
+  
     }
     
     #check:checked ~ ul {
-        left: 0;
+        left: 0px;
     }
 
+    
 }
 

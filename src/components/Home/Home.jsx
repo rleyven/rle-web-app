@@ -6,6 +6,16 @@ import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import Bg1 from "../img/bg1.jpg";
 
 function Home() {
+  const disableRightClick = (e) => {
+    e.preventDefault();
+  };
+
+  const preventDragHandler = (e) => {
+    e.preventDefault();
+  };
+
+  document.addEventListener("contextmenu", disableRightClick);
+
   return (
     <div>
       <div className="home">
@@ -87,7 +97,13 @@ function Home() {
             effective and proven tools and to provide a significant result
             through lowering your operating costs.
           </p>
-          <img data-aos="flip-up" data-aos-duration="1000" src={Bg1} alt="" />
+          <img
+            onDragStart={preventDragHandler}
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            src={Bg1}
+            alt=""
+          />
         </div>
       </div>
     </div>

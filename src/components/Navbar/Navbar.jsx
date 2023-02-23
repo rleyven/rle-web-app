@@ -1,26 +1,26 @@
 import React from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../img/rleweblogo.png";
 
 import "./Navbar.scss";
 
 const Navbar = () => {
+  // const [click, setClick] = useState(false);
+  // const handleClick = () => setClick(!click);
+
   return (
     <nav>
       <input type="checkbox" id="check" />
       <label htmlFor="check" className="checkbtn">
         <i className="fas fa-bars"></i>
       </label>
-      {/* <label className="logo">RLE Software</label> */}
 
       <Link to="/rle-web-app">
         <img src={Logo} alt="" />
-        {/* <img src={process.env.PUBLIC_URL + "/img/rleweblogo.png"} alt="" /> */}
-        {/* <img src={require("../img/rleweblogo.png")} alt="" /> */}
       </Link>
-
-      <ul>
-        <Link to="/rle-web-app" className="home" id="lnk">
+      <ul className="nav-menu">
+        <Link to="/rle-web-app" className="home">
           <li className="link">Main</li>
         </Link>
         <Link to="/rle-web-app/possoftware" className="possoftware">

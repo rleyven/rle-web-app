@@ -3,6 +3,15 @@ import "./possoftware.scss";
 import posPackage from "../img/pos.jpg";
 
 function PosSoftware() {
+  const disableRightClick = (e) => {
+    e.preventDefault();
+  };
+
+  const preventDragHandler = (e) => {
+    e.preventDefault();
+  };
+
+  document.addEventListener("contextmenu", disableRightClick);
   return (
     <div>
       <div className="possoftware">
@@ -23,6 +32,7 @@ function PosSoftware() {
               </div>
             </span>
             <img
+              onDragStart={preventDragHandler}
               data-aos="flip-up"
               data-aos-duration="1000"
               src={posPackage}
